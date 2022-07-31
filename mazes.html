@@ -7,9 +7,15 @@
 
 <h1> GQN-Mazes </h1>
 
-<h3>
+  <h3>Description</h3>
+<h4>
 Example completions, starting from the first 36 frames of a test video. Within each block each column shows completions for a different test video. The top row is the ground-truth and all other rows are sampled completions. Observed frames are marked with a red border, and the end of he video is marked with a checkerboard pattern.
-</h3>
+</h4>
+
+  <h3>Discussion</h3>
+<h4>
+There should only be two wall/floor color pairs within each video (the green/yellow corridors and one other color pair), but FDM with Autoreg often samples more as it cannot track long-range dependencies (e.g. the bottom row of the first column of the Autoreg array contains blue, green, and yellow floors). VDM suffers from the same failure mode (e.g. the bottom row of the first column of the VDM array contains brown, yellow, and blue floors floors) since it has also limited in its ability to track dependencies. We do not observe this failure mode for FDM with Hierarchy-2, or for the CWVAE, although the CWVAE's samples become increasingly blurry over time. This explains the good performance of FDM with the Hierarchy-2 sampling scheme reported in Table 1.
+</h4>
   
   <h2> 
     FDM with Autoreg
