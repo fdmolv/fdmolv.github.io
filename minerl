@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<title>Flexible Diffusion Modeling of Long Videos</title>
+</head>
+<body>
+
+<h1> GQN-Mazes </h1>
+
+<h3>
+Example completions, starting from the first 36 frames of a test video. Within each block each column shows completions for a different test video. The top row is the ground-truth and all other rows are sampled completions. Observed frames are marked with a red border, and the end of he video is marked with a checkerboard pattern.
+</h3>
+  
+  <h2> 
+    FDM with Autoreg
+  </h2>
+  
+<video title="FDM with Autoreg" controls width="300" autoplay>
+    <source src="https://user-images.githubusercontent.com/30051123/182045899-054c6a97-cf81-486f-b14d-f601123b4fc5.mp4" type="video/mp4">
+</video>
+  
+  <h2> 
+    FDM with Hierarchy-2
+  </h2>
+  
+<video title="FDM with Hierarchy-2" controls width="300" autoplay>
+    <source src="https://user-images.githubusercontent.com/30051123/182045904-5ccab98c-48b3-466b-8f9a-2aaad5c419ad.mp4" type="video/mp4">
+</video>
+
+  <h2> 
+    CWVAE
+  </h2>
+  
+  <video title="CWVAE" controls width="300" autoplay>
+    <source src="https://user-images.githubusercontent.com/30051123/182045922-96a4ddff-71aa-45c5-9e79-2ddf919b09f9.mp4" type="video/mp4">
+</video>
+
+
+
+
+</body>
+</html>
