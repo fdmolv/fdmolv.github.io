@@ -4,10 +4,14 @@
 </head>
 <body>
 
-<h1> Flexible Diffusion Modeling of Long Videos </h1>
-    
-<h2> MineRL completions on train set (left array) vs test set (right array):
-Each column shows completions given the first 36 frames of a particular train/test video. The top row shows the train/test video, and the remaining rows show three completinos sampled from FDM.
+<h1> Video completions on train set vs test set </h1>
+
+    <h3>
+Arrays on the left are completions of training videos, and arrays on the right are completions of test videos.
+In each 5x4 block of videos, the top row shows train/test videos, and the remaining rows show three FDM completions, conditioned on the first 36 frames.
+    </h3>
+        
+<h2> MineRL (sampled with Hierarchy-2)
 </h2>
 
 <video controls width="300" autoplay>
@@ -18,7 +22,7 @@ Each column shows completions given the first 36 frames of a particular train/te
 </video>
 
 
-<h2> GQN-Mazes completions on train set (left array) vs test set (right array):
+<h2> GQN-Mazes (sampled with Long-range)
 </h2>
 
 <video controls width="300" >
