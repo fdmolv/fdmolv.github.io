@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Unconditional - FDM</title>
+</head>
+<body>
+
+<h1> CARLA videos on Town01 vs Town02 (out-of-distribution) </h1>
+
+<h3>Description</h3>
+<h4>
+Comparison of CARLA video completions on the held-out, in-distribution Town01 set (left array) and on out-of-distribution Town02 videos (right array). 
+
+Each starts from the first 36 frames of a test video. Within each block each column shows completions for a different test video. The top row is the ground-truth and all other rows are sampled completions. Observed frames are marked with a red border.
+</h4>
+
+<video title="Town01" controls width="300" autoplay>
+    <source src="https://user-images.githubusercontent.com/30051123/182253052-d6096b60-66a2-420d-baed-7aed52b2aec7.mp4" type="video/mp4">
+</video>
+<video title="Town02" controls width="300" autoplay>
+    <source src="https://user-images.githubusercontent.com/30051123/182253035-af931c15-5952-45bf-8113-3e1c01480587.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>
