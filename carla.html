@@ -16,7 +16,8 @@ Example completions, starting from the first 36 frames of a test video. Within e
 <h4>
 Samples from FDM with Autoreg show no movement a large proportion of the time. This is a similar failure mode to that shown for the Long-range sampling scheme in Figure 6, and explains the bad WD score in Table 1.
 Samples from FDM with Hierarchy-2 exhibit occasional "flickers", where frames generated in the first stage of the sampling scheme are not aligned with neighbouring frames generated in later stages (explaining the relatively bad OP score). They are otherwise fairly realistic (explaining their relatively good WD and FVD scores).
-As seen in the other datasets, samples from CWVAE are much blurrier than those from FDM or VDM.
+As seen in the other datasets, samples from CWVAE are much blurrier than those from the other methods. 
+Samples from VDM do not show obvious failure modes, but an analysis of the point-speeds of VDM's generated videos (as described in Section 5) shows that the speed is excessively variable. VDM point-speeds have smaller peaks around zero and the 3m/s speed limit than the ground-truth, FDM with Autoreg, or FDM with Hierarchy-2.
 </h4>
   
   <h2> 
