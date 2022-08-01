@@ -14,7 +14,7 @@ Example completions, starting from the first 36 frames of a test video. Within e
 
   <h3>Discussion</h3>
 <h4>
-There should only be two wall/floor color pairs within each video (the green/yellow corridors and one other color pair), but FDM with Autoreg often samples more as it cannot track long-range dependencies (e.g. the bottom row of the first column of the Autoreg array contains blue, green, and yellow floors). VDM suffers from the same failure mode (e.g. the bottom row of the first column of the VDM array contains brown, yellow, and blue floors floors) since it has also limited in its ability to track dependencies. We do not observe this failure mode for FDM with Hierarchy-2, or for the CWVAE, although the CWVAE's samples become increasingly blurry over time. This explains the good performance of FDM with the Hierarchy-2 sampling scheme reported in Table 1.
+There should only be two wall/floor color pairs within each video (the green/yellow corridors and one other color pair), but FDM with Autoreg often samples more as it cannot track long-range dependencies (e.g. the bottom row of the first column of the Autoreg array contains blue, green, and yellow floors). VDM suffers from the same failure mode (e.g. the bottom row of the final column of the VDM array contains blue, yellow, and green floors) since it is also limited in its ability to track dependencies. We do not observe this failure mode for FDM with Hierarchy-2, or for the CWVAE, although the CWVAE's samples become increasingly blurry over time. This explains the good performance of FDM with the Hierarchy-2 sampling scheme reported in Table 1.
 </h4>
   
   <h2> 
